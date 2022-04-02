@@ -1,0 +1,121 @@
+body {
+  background-color: #282c34;
+}
+p {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  margin: 5vh;
+  box-shadow: 0 0 20px red;
+  padding: 3vmin;
+}
+
+.app-logo {
+  height: 6vmin;
+  pointer-events: none;
+  margin-left: auto;
+  flex-grow: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.control-panel {
+  height: 20vmin;
+}
+
+.control-panel .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.control-panel .header p {
+  font-size: 6vmin;
+  color: white;
+  flex-grow: 3;
+}
+
+.control-panel .menubar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.control-panel .menubar div {
+  height: 100%;
+  color: white;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vmin;
+  margin-right: auto;
+}
+
+.timer {
+  margin-left: auto;
+  margin-right: 2vmin;
+}
+
+.reset-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.field {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+.cell {
+  margin: 5px;
+  height: 6vmin;
+  width: 6vmin;
+  background-color: black;
+}
+
+.opened {
+  background-color: #282c34;
+  box-shadow: 0 0 5px 2px red;
+}
+
+.flagged img {
+  height: inherit;
+  width: inherit;
+}
+
+.bomb img {
+  background-color: red;
+  height: inherit;
+  width: inherit;
+}
